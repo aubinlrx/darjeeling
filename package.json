@@ -1,0 +1,18 @@
+{
+    "name": "express-app",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node ./system/boot.js"
+    },
+    "dependencies": {
+        "express": "4.4.5",
+        "winston": "0.7.x",
+        "body-parser": "1.4.3",
+        "serve-favicon": "2.0.x",
+        "serve-static": "1.3.x",
+        "mongoose": "3.8.x",
+        "jade": "*",
+        "nodetime": "0.8.x"
+    }
+}
