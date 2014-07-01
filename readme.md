@@ -13,7 +13,7 @@ Darjeeling is nice and simple full-stack framework to easily create web applicat
 - NodeTime
 
 ## Install dependencies
-With [node](https://nodejs.org)
+**With [node](https://nodejs.org)**
 
 ``` sh
 $ npm install
