@@ -14,9 +14,9 @@ Darjeeling is nice and simple full-stack framework to easely create web applicat
 
 ## Install and run
 
-``
+``` javascript
 npm install
 npm start
-``
+```
 
 Node is required with npm installed
