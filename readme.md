@@ -12,3 +12,11 @@ Darjeeling is nice and simple full-stack framework to easely create web applicat
 - Mongoose
 - NodeTime
 
+## Install and run
+
+``
+npm install
+npm start
+``
+
+Node is required with npm installed
