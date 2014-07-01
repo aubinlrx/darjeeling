@@ -1,7 +1,7 @@
 Darjeeling
 ==========
 
-Darjeeling is nice and simple full-stack framework to easily create web application on NodeJS. He is based on ExpressJS and some nice modules.
+Darjeeling is nice and simple full-stack framework to easily create web application on [NodeJS](https://nodejs.org). He is based on [ExpressJS](http://expressjs.com/) and some nice modules.
 
 ## Dependencies
 - Express
