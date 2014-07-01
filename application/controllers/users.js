@@ -1,11 +1,6 @@
 'use strict';
 
-/**
-* Load Models
-*/
-var User   = require('../models/user_model');
-
-module.exports = {
+var User = {
 
     /**
     * User Index
@@ -57,3 +52,5 @@ module.exports = {
     }
 
 }
+
+module.exports = User;

@@ -1,8 +1,6 @@
 'use strict';
 
-var logger = require('morgan');
-
-module.exports = {
+var Player = {
 
     /**
     * Player Index
@@ -11,4 +9,7 @@ module.exports = {
         res.send('Player Index');
     }
 
-}
+};
+
+
+module.exports = Player;

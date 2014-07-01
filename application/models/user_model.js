@@ -2,10 +2,12 @@
 
 var mongoose = require('mongoose');
 
-module.exports = {
+var User = {
 
     getAll: function() {
         return 'Users getAll';
     }
 
 }
+
+module.exports = User;

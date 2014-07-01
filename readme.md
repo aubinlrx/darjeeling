@@ -21,7 +21,5 @@ $ npm install
 
 ## Start server
 ``` sh
-npm start
+$ npm start
 ```
-
-Node is required with npm installed
