@@ -19,10 +19,10 @@ module.exports = function( db, logger, root_path ) {
     //Set view directory
     app.set('port', config.PORT);
     app.set('view engine', config.VIEW_ENGINE);
-    app.set('views', root_path + '/application/views');
-    app.set('models', root_path + '/application/models');
-    app.set('routes', root_path + '/application/routes');
-    app.set('controllers', root_path + '/application/controllers');
+    app.set('views', path.join(root_path, config.VIEWS_PATH) );
+    app.set('models', path.join(root_path, config.MODELS_PATH) );
+    app.set('routes', path.join(root_path, config.ROUTES_PATH) );
+    app.set('controllers', path.join(root_path, config.CONTROLLERS_PATH) );
     app.set('config', config);
 
     //Set assets
@@ -31,6 +31,9 @@ module.exports = function( db, logger, root_path ) {
 
     //Bootstrap routes
     require('./routes')(app);
+
+    //Boostrap errors handling
+    require('./errors')(app);
 
     //Bootstrap models
     require('./models')(app);

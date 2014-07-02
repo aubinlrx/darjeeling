@@ -4,7 +4,11 @@ var base = {
     ENV: process.env.NODE_ENV || 'developpment',
     PORT: process.env.PORT || 3000,
     VIEW_ENGINE: 'jade',
-    DB_URL: "mongodb://localhost/dev"
+    DB_URL: "mongodb://localhost/dev",
+    ROUTES_PATH: 'application/routes',
+    CONTROLLERS_PATH: 'application/controllers',
+    MODELS_PATH: 'application/models',
+    VIEWS_PATH: 'application/views'
 };
 
 var dev = {

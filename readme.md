@@ -26,6 +26,6 @@ $ npm start
 
 ## Roadmap (in progress)
 
-1. Handling 4XX/5XX http status
+1. ~~Basic 4XX/5XX errors handling~~
 2. Rails routes flavor
 3. ODBC support 

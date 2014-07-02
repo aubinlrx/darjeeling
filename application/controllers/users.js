@@ -6,6 +6,7 @@ var User = {
     * User Index
     **/
     index: function(req, res) {
+        res.send(test);
         res.send('Index user');    
     },
 
