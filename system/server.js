@@ -16,6 +16,12 @@ module.exports = function( db, logger, root_path ) {
 
     var app = express();
 
+    //To get POST body
+    app.use( bodyParser.json() );
+    app.use( bodyParser.urlencoded({
+        extended: true
+    }) );
+
     //Set view directory
     app.set('port', config.PORT);
     app.set('view engine', config.VIEW_ENGINE);
@@ -28,6 +34,9 @@ module.exports = function( db, logger, root_path ) {
     //Set assets
     app.use( favicon( path.join(root_path, 'assets/img/favicon.ico') ) );
     app.use( serveStatic( path.join(root_path, 'assets') ) );
+
+    //Boostrap views helpers
+    require('./helpers')(app);
 
     //Bootstrap routes
     require('./routes')(app);
