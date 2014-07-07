@@ -6,6 +6,9 @@ var fs      = require('fs'),
 module.exports = function( app ) {
 
     fs.readdirSync(app.settings.routes).forEach(function(file) {
+
+        if( file === 'readme.md') return;
+
         var filePath = path.join(app.settings.routes, file);
         var filePathCtrl = path.join(app.settings.controllers, file); 
         if( filePath !== __filename )
