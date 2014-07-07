@@ -13,3 +13,8 @@ application/models/
 application/routes/
 application/views/
 .idea
+
+!application/controllers/readme.md
+!application/models/readme.md
+!application/routes/readme.md
+!application/views/readme.md
