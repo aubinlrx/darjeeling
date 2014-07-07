@@ -8,4 +8,8 @@
 *.swp
 *.swo
 node_modules/
+application/controllers/
+application/models/
+application/routes/
+application/views/
 .idea
