@@ -16,6 +16,8 @@ application/routes/*
 !application/routes/readme.md
 application/views/*
 !application/views/readme.md
+!application/views/500.jade
+!application/views/404.jade
 .idea
 
 
