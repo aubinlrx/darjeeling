@@ -8,13 +8,16 @@
 *.swp
 *.swo
 node_modules/
-application/controllers/
-application/models/
-application/routes/
-application/views/
+application/controllers/*
+!application/controllers/readme.md
+application/models/*
+!application/models/readme.md
+application/routes/*
+!application/routes/readme.md
+application/views/*
+!application/views/readme.md
 .idea
 
-!application/controllers/readme.md
-!application/models/readme.md
-!application/routes/readme.md
-!application/views/readme.md
+
+
+
