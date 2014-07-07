@@ -8,7 +8,8 @@ var base = {
     ROUTES_PATH: 'application/routes',
     CONTROLLERS_PATH: 'application/controllers',
     MODELS_PATH: 'application/models',
-    VIEWS_PATH: 'application/views'
+    VIEWS_PATH: 'application/views',
+    BASE_URL: ''
 };
 
 var dev = {
