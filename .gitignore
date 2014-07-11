@@ -18,6 +18,8 @@ application/views/*
 !application/views/readme.md
 !application/views/500.jade
 !application/views/404.jade
+application/schemas/*
+!application/schemas/readme.md
 .idea
 
 
