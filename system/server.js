@@ -33,7 +33,7 @@ module.exports = function( db, logger, root_path ) {
 
     //Set assets
     app.use( favicon( path.join(root_path, 'assets/img/favicon.ico') ) );
-    app.use( serveStatic( path.join(root_path, 'assets') ) );
+    app.use('/assets', express.static(root_path + '/assets'));
 
     //Boostrap views helpers
     require('./helpers')(app);

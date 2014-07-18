@@ -29,3 +29,4 @@ $ npm start
 1. ~~Basic 4XX/5XX errors handling~~
 2. Rails routes flavor
 3. ODBC support 
+4. Expose Model to the global scope for direct access in Controller
