@@ -1,7 +1,9 @@
 'use strict';
 
-var fs      = require('fs'),
-    path    = require('path');
+var fs              = require('fs'),
+    path            = require('path'),
+    _               = require('lodash'),
+    stringHelper    = require('./helpers/string_helper');
 
 module.exports = function( app ) {
     
@@ -14,7 +16,22 @@ module.exports = function( app ) {
         {
             var baseFilename = path.basename(file, path.extname(file));
             var model = path.join(app.settings.models, baseFilename);
-            return require(model);
+
+            if( typeof global[baseFilename] === 'undefined' )
+            {
+
+                var arr = baseFilename.split('_');
+
+                var modelName = _.reduce(stringHelper.arrToUcFirst(arr), function(result, n, i) {
+                    return result + n;
+                });
+
+                return global[modelName] = require(model);
+            }
+            else
+            {
+                console.log('Can\t load model: ['+ baseFilename +'] already exist');
+            }
         }
     });
 
