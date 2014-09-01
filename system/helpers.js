@@ -3,6 +3,7 @@
 //Configs
 var config  = require('../application/configs/config');
 var path    = require('path');
+var moment  = require('moment');
 
 var Helpers = function( app ) {
 
@@ -24,6 +25,8 @@ var Helpers = function( app ) {
 
             return suffix + url;
         }
+
+        res.locals.moment = moment;
 
         next();
 
