@@ -21,6 +21,7 @@
         "jade": "*",
         "nodetime": "0.8.x",
         "lodash": "2.4.x",
-        "moment": "2.8.x"
+        "moment": "2.8.x",
+        "async": "0.9.x"
     }
 }

@@ -4,6 +4,7 @@
 var config  = require('../application/configs/config');
 var path    = require('path');
 var moment  = require('moment');
+var _       = require('lodash');
 
 var Helpers = function( app ) {
 
@@ -27,6 +28,7 @@ var Helpers = function( app ) {
         }
 
         res.locals.moment = moment;
+        res.locals._      = _;
 
         next();
 
