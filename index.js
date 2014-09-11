@@ -28,7 +28,11 @@ process.on('uncaughtException', function(err){
 
 //Boostrap db connection
 var db = mongoose.connect(config.DB_URL);
-logger.info("Mongo connected to", config.DB_URL);
+
+//Display When connected
+mongoose.connection.on('connected', function() {
+    logger.info("Mongo connected to", config.DB_URL);
+});
 
 //Exit on db error
 mongoose.connection.on('error', function(err) {
