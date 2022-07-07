@@ -16,7 +16,7 @@
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
         "lodash": "^4.17.15",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "mongoose": "^5.8.9",
         "nodetime": "^0.8.17",
         "pug": "^2.0.4",
